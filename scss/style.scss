@@ -1,0 +1,195 @@
+@import "normalize";
+@import "layout";
+
+
+@font-face {
+	font-family: 'JF Flat';
+	 src: url('../font/JF-Flat-regular.eot'); /* IE9 Compat Modes */
+  src: url('../font/JF-Flat-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/JF-Flat-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/JF-Flat-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/JF-Flat-regular.svg#svgJF Flat') format('svg'); /* Legacy iOS */
+
+   }
+
+   $primary-font:'JF Flat',Arial,sans-serif;
+
+   $location-bg: #620808;
+   $location-color: #ffe9c1;
+
+
+   $music-bg: #a53f3f ;
+   $music-color:#f4ce74;
+
+
+   $notes-bg: #f4ce74;
+   $notes-color:#620808;
+
+   $lighting-bg: #d5441c ;
+   $lighting-color: #ffe9c1;
+
+   $book-bg: #ffe9c1 ;
+   $book-color: #a53f3f;
+
+
+
+   body{
+   	background: #f6704b;
+   	color:#ffe9c1;
+   	font:400 16px/1.6 $primary-font;
+   	overflow-y: scroll;
+   }
+   .ba-accordion {
+   	max-width: 380px;
+   	margin: 0 auto;
+   	padding: 0;
+   	&__title {
+   		cursor: pointer;
+   		background-color: $location-bg;
+   		color: $location-color;
+   		padding: 22px 15px;
+   		display: flex;
+   		align-items: center;
+   		font-size: 24px;
+   		&:hover {
+   			opacity: .8;
+   		}
+
+   		&--music {
+   			background: $music-bg;
+   			color: $music-color;
+
+   		}
+
+   		&--notes {
+   			background: $notes-bg;
+   			color: $notes-color;
+
+   		}
+
+   		&--book{
+   			background: $book-bg;
+   			color: $book-color;
+
+
+   		}
+   		&--lighting {
+   			background: $lighting-bg;
+   			color: $lighting-color;
+
+   		}
+
+   	}
+   	&__content {
+   		display: none;
+   		padding: 15px;
+   		margin: 0;
+   		line-height: 1.6;
+   		font-size: 16px;
+   		background-color: $location-bg;
+   		color: $location-color;
+   		box-shadow: inset 0 0 15px rgba(0,0,0,.25);
+   		&--music {
+   			background: $music-bg;
+   			color: $music-color;
+
+   		}
+
+   		&--notes {
+   			background: $notes-bg;
+   			color: $notes-color;
+
+   		}
+
+   		&--book{
+   			background: $book-bg;
+   			color: $book-color;
+
+
+   		}
+   		&--lighting {
+   			background: $lighting-bg;
+   			color: $lighting-color;
+
+   		}
+   	}
+
+   }
+   .ba-icon {
+   	display: inline-block;
+   	height: 56px;
+   	width: 45px;
+   	background: url("../img/icon.png") 50% 0 no-repeat;
+   	margin-right: 55px;
+   	&--music {
+   		background-position-y:-96px;
+   	}
+
+   	&--notes {
+   		background-position-y:-196px;
+   	}
+   	&--book {
+   		background-position-y:-463px;
+   	}
+   	&--lighting  {
+   		background-position-y:-559px;
+   	}
+
+   }
+
+
+/* Layout */
+.ba-container{
+	padding: 35px 20px;
+	max-width: 960px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
